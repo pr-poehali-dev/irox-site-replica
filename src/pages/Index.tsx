@@ -1,5 +1,5 @@
 import Hero from '@/components/webapp/Hero';
-import Benefits from '@/components/webapp/Benefits';
+import Services from '@/components/webapp/Services';
 import Gallery from '@/components/webapp/Gallery';
 import Testimonials from '@/components/webapp/Testimonials';
 import Contact from '@/components/webapp/Contact';
@@ -9,7 +9,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Hero />
-      <Benefits />
+      <Services />
       <Gallery />
       <Testimonials />
       <Contact />

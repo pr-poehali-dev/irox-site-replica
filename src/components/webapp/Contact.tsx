@@ -34,20 +34,25 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 font-heading">
-            Свяжитесь с нами
+    <section id="contact" className="py-32 bg-secondary relative overflow-hidden">
+      <div className="container mx-auto px-6">
+        <div className="max-w-3xl mx-auto text-center mb-20 animate-fade-in">
+          <div className="inline-block px-4 py-2 bg-accent/10 rounded-full mb-6">
+            <span className="text-sm font-semibold text-accent uppercase tracking-wider">
+              Контакты
+            </span>
+          </div>
+          <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
+            Начните с нами работу
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Готовы начать трансформацию вашего бизнеса? Оставьте заявку на консультацию
+          <p className="text-xl text-muted-foreground leading-relaxed">
+            Оставьте заявку, и наш эксперт свяжется с вами в течение 24 часов
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          <Card className="border-none shadow-lg animate-fade-in-up">
-            <CardContent className="p-8">
+          <Card className="border border-border bg-card shadow-xl rounded-2xl animate-fade-in-up">
+            <CardContent className="p-10">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-semibold mb-2 text-foreground">
@@ -114,7 +119,7 @@ const Contact = () => {
                 <Button 
                   type="submit" 
                   size="lg" 
-                  className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold"
+                  className="w-full bg-accent hover:bg-accent/90 text-primary font-semibold text-lg py-7 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
                 >
                   Отправить заявку
                   <Icon name="Send" className="ml-2" size={18} />
@@ -123,8 +128,8 @@ const Contact = () => {
             </CardContent>
           </Card>
 
-          <div className="space-y-8 animate-fade-in-up" style={{ animationDelay: '200ms' }}>
-            <Card className="border-none shadow-lg bg-card">
+          <div className="space-y-6 animate-fade-in-up" style={{ animationDelay: '200ms' }}>
+            <Card className="border border-border bg-card shadow-lg rounded-2xl hover:border-accent/50 transition-all duration-300">
               <CardContent className="p-6 flex items-start gap-4">
                 <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center shrink-0">
                   <Icon name="Mail" className="text-accent" size={24} />
@@ -136,7 +141,7 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-none shadow-lg bg-card">
+            <Card className="border border-border bg-card shadow-lg rounded-2xl hover:border-accent/50 transition-all duration-300">
               <CardContent className="p-6 flex items-start gap-4">
                 <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center shrink-0">
                   <Icon name="Phone" className="text-accent" size={24} />
@@ -148,7 +153,7 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-none shadow-lg bg-card">
+            <Card className="border border-border bg-card shadow-lg rounded-2xl hover:border-accent/50 transition-all duration-300">
               <CardContent className="p-6 flex items-start gap-4">
                 <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center shrink-0">
                   <Icon name="MapPin" className="text-accent" size={24} />
@@ -160,7 +165,7 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-none shadow-lg bg-card">
+            <Card className="border border-border bg-card shadow-lg rounded-2xl hover:border-accent/50 transition-all duration-300">
               <CardContent className="p-6 flex items-start gap-4">
                 <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center shrink-0">
                   <Icon name="Clock" className="text-accent" size={24} />
